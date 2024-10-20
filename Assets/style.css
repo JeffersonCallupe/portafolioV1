@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+:root{
+    --tipoLetra: "Raleway", sans-serif;
+}
+
+body{
+    width: 100%;
+    font-family: var(--tipoLetra);
+    background: linear-gradient(to bottom, #000406 36%, #00486C 100%);
+    color: white;
+}
+
+
+
+
+/* PORTADA */
+
+.portada{
+    width: 100%;
+    height: 525px;
+    background-image: url(img/portada.jpg);
+    background-size: cover;
+}
+
+
+/* HEADER  */
+.header{
+    width: 80%;
+    height: 88px;
+    color: white;
+    font-size: 16px;
+
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.picture{
+    width: 10%;
+    height: 100%;
+}
+
+.picture img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.menu{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__items{
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.menu__items li{
+    
+    list-style-type: none;
+    a {
+        color: white;
+    
+    }
+    margin-left: 30px;
+}
+
+
+/* CONTENIDO PORTADA */
+
+.detallePersona{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+
+.detallePersona__info__nombre p{
+    margin-top: 30px;
+    font-size: 52px;
+    font-weight: 600;
+}
+
+
+.detallePersona__info__formacion p{
+    margin-top: 20px;
+    font-size: 22px;
+
+}
+
+.detallePersona__info__links{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.info__links{
+    display: flex;
+    flex-direction: row;
+    a {
+        color: white;
+        font-size: 16px;
+    }
+}
+
+
+
+/* SOBRE MÍ  */
+
+.sobre{
+    width: 100%;
+    height: 380px;
+}
+
+.sobre__mi{
+    width: 80%;
+    margin: 0 auto;
+    padding: 64px  200px 64px 0 ;
+}
+
+.sobre__mi h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.sobre__mi p{
+    line-height: 25px;
+}
+
+/* SKILLS Y HOBIES  */
+
+.destrezas{
+    width: 100%;
+    height: 150px;
+    margin-top: 200px;
+}
+
+.skills{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.skills__title{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.skills__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.herramienta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+/* FORMACIÓN */
+
+
+.formacion{
+    width: 100%;
+    height: 400px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formacion__container{
+    width: 80%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
+ 
+}
+
+.formacion__title{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+
+.formacion__institucion{
+    width: 25%;
+    height: 150px;
+}
+
+.formacion__institucion-img{
+    width: 100%;
+    height: 220px;
+    background-color: rgb(255, 255, 255)
+}
+
+.formacion__institucion-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.formacion__institucion-img img{
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.formacion__institucion--3 .formacion__institucion-img img{
+    width: 80%;
+}
+
+
+
+/* EXPERIENCIA PROFESIONAL */
+
+
+.experiencia{
+    width: 100%;
+    height: 1200px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+}
+
+
+.experiencia__title{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.experiencia__projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+
+
+
+.experiencia__proyecto{
+    width: 80%;
+    height: 340px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.experiencia__proyecto--img{
+    width: 70%;
+   
+}
+
+
+.experiencia__proyecto--img img{
+    width: 100%;
+    background-size: cover;
+}
+
+.experiencia__proyecto--info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.experiencia__proyecto--info h4{
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.experiencia__proyecto--info p{
+    font-size: 16px;
+    margin-bottom: 8px;
+
+}
+
+
+.boton{
+    height: 51px;
+    font-size: 16px;
+    padding: 16px;
+    background-color: white;
+    border: 1px solid #2A7AE4;
+    a{
+        color: #2A7AE4;
+    }
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+#demo{
+    background-color: #2A7AE4;
+    a{
+        color: white;
+
+    }
+}
+
+
+
+.experiencia__proyecto--2{
+    flex-direction: row-reverse;
+}
+
+
+.experiencia__proyecto--2 .experiencia__proyecto--info{
+    padding: 0 20px 0 0;
+}
+
+
+
+
+/* CONTACTO  */
+
+.contacto{
+    width: 100%;
+    height: 700px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto__container{
+    width: 80%;
+    height: 570px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto__container--img{
+ height: 100%;
+}
+.contacto__container--img img{
+    background-size: cover;
+    height: 100%;
+}
+
+.contacto__container--info{
+    padding-left: 50px;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+
+.contacto__container--info h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.contacto__container--info p{
+    font-size: 16px;
+
+}
+
+
+.formulario{
+    margin-top: 32px;
+}
+
+
+.enviar{
+    padding: 16px;
+    background-color: #2A7AE4;
+
+}
+
+/* FOTER  */
+
+
+.footer{
+    width: 100%;
+    background-color: #020114;
+    text-align: center;
+    margin-top: 50px;
+}
