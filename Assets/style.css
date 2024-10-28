@@ -43,7 +43,6 @@ body{
     height: 88px;
     color: white;
     font-size: 16px;
-
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -208,7 +207,6 @@ body{
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-evenly;
- 
 }
 
 .formacion__title{
@@ -223,18 +221,17 @@ body{
     height: 150px;
 }
 
+
 .formacion__institucion-img{
     width: 100%;
     height: 220px;
-    background-color: rgb(255, 255, 255)
-}
-
-.formacion__institucion-img{
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
 }
+
 .formacion__institucion-img img{
     width: 100%;
     height: 180px;
@@ -283,7 +280,6 @@ body{
     height: 340px;
     display: flex;
     flex-direction: row;
-    
 }
 
 
@@ -377,6 +373,7 @@ body{
 .contacto__container--img{
  height: 100%;
 }
+
 .contacto__container--img img{
     background-size: cover;
     height: 100%;
@@ -396,7 +393,6 @@ body{
 
 .contacto__container--info p{
     font-size: 16px;
-
 }
 
 
@@ -420,3 +416,419 @@ body{
     text-align: center;
     margin-top: 50px;
 }
+
+
+
+
+
+/* MEDIA QUERY PARA TABLET */
+
+@media (max-width: 768px){
+
+/* PORTADA */
+.portada{
+
+    height: 400px;
+   
+}
+
+
+.header{
+    width: 90%;
+    height: 70px;
+
+}
+
+.menu{
+    width: 80%;
+    justify-content: end;
+}
+
+
+.linkPage{
+    display: none;
+}
+
+
+    /* CONTENIDO PORTADA */
+
+
+    .detallePersona{
+        width: 90%;
+     
+    }
+
+    .detallePersona__info__nombre p{
+        font-size: 25px;
+    }
+
+    .detallePersona__info__formacion p{
+        font-size: 17px;
+    
+    }
+
+    .detallePersona__img{
+
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+
+
+
+
+
+/* SOBRE MÍ  */
+
+.sobre{
+
+    height: 450px;
+}
+
+.sobre__mi{
+    width: 90%;
+    padding: 64px  0px 64px 0 ;
+  
+}
+
+.sobre__mi h1{
+    font-size: 25px;
+
+}
+
+
+.sobre__mi p{
+    line-height: 28px;
+}
+
+
+
+/* SKILLS Y HOBIES  */
+
+.destrezas{
+    
+    margin-top: 100px;
+    height: 350px;
+
+}
+
+
+.skills{
+    width: 90%;
+   
+}
+
+
+.skills__title{
+    font-size: 25px;
+    margin-bottom: 40px;
+
+}
+
+.skills__container{
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+
+
+/* FORMACIÓN */
+
+.formacion{
+    margin-top: 100px;
+
+}
+
+.formacion__container{
+    width: 90%;
+   height: 180px;
+ 
+}
+
+.formacion__title{
+    font-size: 25px;
+}
+
+.formacion__institucion{
+    height: 180px;
+}
+
+.formacion__institucion-img{
+    height: 100%;
+
+}
+
+
+.formacion__institucion-img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* EXPERIENCIA PROFESIONAL */
+
+
+.experiencia{
+    margin-top: 50px;
+}
+
+
+.experiencia__title{
+    font-size: 25px;
+}
+
+
+.experiencia__projects{
+    height: auto;
+}
+
+.experiencia__proyecto{
+    width: 90%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.experiencia__proyecto--img{
+    width: 100%;
+   
+}
+
+
+.experiencia__proyecto--info h4{
+    font-size: 20px;
+  
+}
+
+.experiencia__proyecto--info p{
+    font-size: 15px;
+    margin-bottom: 8px;
+
+}
+
+.boton{
+    font-size: 14px;
+  
+}
+
+
+/* CONTACTO  */
+
+.contacto__container{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contacto__container--img{
+
+    display: none;
+
+}
+
+.contacto__container--img img{
+       display: none;
+}
+
+
+.contacto__container--info h1{
+    font-size: 25px;
+}
+
+.contacto__container--info p{
+    font-size: 14px;
+}
+
+
+
+/* FOTER  */
+
+
+.footer{
+    font-size: 15px ;
+   
+}
+
+}
+
+
+
+/* MEDIA QUERY MOBILE  */
+
+
+@media ( max-width: 360px){
+
+    .header{
+        width: 90%;
+        height: 40px;
+
+    }
+
+    .menu{
+        width: 80%;
+        justify-content: end;
+        font-size: 15px;
+    }
+
+/* CONTENIDO PORTADA */
+
+
+.detallePersona{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: start;
+    flex-direction: column-reverse;
+
+ 
+}
+
+.detallePersona__info__nombre p{
+    margin-top: 10px;
+    font-size: 25px;
+ 
+}
+
+
+.detallePersona__info__formacion p{
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+
+.info__links{
+    a {
+        font-size: 12px;
+    }
+}
+
+
+.detallePersona__img{
+    width: 30%;
+    padding-top: 0;
+}
+
+.detallePersona__img img{
+    width: 100%;
+
+}
+
+
+/* SOBRE MÍ  */
+
+.sobre{
+    height: auto;
+}
+
+
+/* SKILLS Y HOBIES  */
+
+.destrezas{
+    margin-top: 50px;
+    height: auto;
+}
+
+
+
+/* FORMACIÓN */
+
+.formacion{
+    height: 750px;
+    margin-top: 50px;
+}
+
+.formacion__container{
+    width: 90%;
+    gap: 50px;
+
+}
+
+
+.formacion__institucion{
+    width: 80%;
+}
+
+
+.formacion__institucion-img{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* EXPERIENCIA PROFESIONAL */
+
+
+.experiencia{
+    height: auto;
+}
+
+.experiencia__title{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.experiencia__projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.experiencia__proyecto{
+    height: auto;
+    
+}
+
+
+
+.experiencia__proyecto--info{
+    height: auto;
+}
+
+
+
+
+/* CONTACTO  */
+.contacto{
+    width: 100%;
+    height: 650px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto__container{
+    width: 90%;
+}
+
+
+.contacto__container--info{
+    padding-left: 0;
+   
+}
+
+
+
+
+/* FOTER  */
+
+
+.footer{
+    font-size: 12px;
+}
+} 
+
